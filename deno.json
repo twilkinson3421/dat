@@ -1,6 +1,6 @@
 {
     "name": "@zerm/dat",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "0BSD",
     "exports": "./src/index.ts",
 

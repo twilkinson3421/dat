@@ -1,13 +1,5 @@
 export class List<T> {
-    #nodes: ListNode<T>[] = [];
-
-    get nodes(): ListNode<T>[] {
-        return this.#nodes;
-    }
-
-    private set nodes(nodes: ListNode<T>[]) {
-        this.#nodes = nodes;
-    }
+    accessor nodes: ListNode<T>[] = [];
 
     get values(): T[] {
         return this.nodes.map(node => node.value);
@@ -213,7 +205,7 @@ export class List<T> {
 }
 
 export class ListNode<T> {
-    readonly uid = Symbol();
+    readonly uid: symbol = Symbol();
 
     get index(): number {
         return this.list.nodes.map(node => node.uid).indexOf(this.uid);
