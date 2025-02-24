@@ -1,0 +1,27 @@
+{
+    "name": "@zerm/dat",
+    "version": "0.0.1",
+    "license": "0BSD",
+    "exports": "./src/index.ts",
+
+    "lint": {
+        "rules": {
+            "include": [
+                "camelcase",
+                "default-param-last",
+                "eqeqeq",
+                "explicit-module-boundary-types",
+                "guard-for-in",
+                "no-boolean-literal-for-arguments",
+                "no-eval",
+                "no-inferrable-types",
+                "no-sparse-arrays",
+                "no-sync-fn-in-async-fn",
+                "no-throw-literal",
+                "single-var-declarator",
+                "triple-slash-reference",
+                "verbatim-module-syntax"
+            ]
+        }
+    }
+}
